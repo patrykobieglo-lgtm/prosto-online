@@ -79,10 +79,11 @@
             <a href="#" class="logo">prosto<span>online</span></a>
 
             <ul class="nav-links">
-                <li><a href="#oferta">Oferta</a></li>
-                <li><a href="#onas">O nas</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
+    <li><a href="#oferta">Oferta</a></li>
+    <li><a href="#pomoc-lokalna">Pomoc lokalna</a></li>
+    <li><a href="#onas">O nas</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+</ul>
 
             <a href="#kontakt" class="nav-button">Porozmawiajmy</a>
         </nav>
@@ -160,30 +161,86 @@
             </div>
         </section>
 
-        <!-- O NAS -->
-        <section class="about" id="onas">
-            <div class="about-content">
-                <span class="eyebrow">PROSTO ONLINE</span>
-                <h2>Technologia, która ułatwia prowadzenie firmy.</h2>
+        
+        </section>
+
+        <!-- POMOC KOMPUTEROWA Z DOJAZDEM -->
+        <section class="local-services" id="pomoc-lokalna">
+            <div class="section-heading">
+                <span class="eyebrow">POMOC NA MIEJSCU</span>
+                <h2>Pomoc komputerowa z dojazdem</h2>
                 <p>
-                    Wiemy, że prowadzenie firmy wymaga czasu.
-                    Dlatego stawiamy na proste rozwiązania,
-                    przejrzystą komunikację i praktyczne wsparcie.
+                    Masz problem z komputerem? Przyjadę do Ciebie
+                    i pomogę rozwiązać go na miejscu.
                 </p>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon">⌘</div>
+                    <h3>Windows i macOS</h3>
+                    <p>Konfiguracja systemu, ustawień i urządzeń.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">⚙</div>
+                    <h3>Instalacja programów</h3>
+                    <p>Instalacja i konfiguracja oprogramowania.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">◎</div>
+                    <h3>Wi-Fi i drukarki</h3>
+                    <p>Konfiguracja sieci, drukarek i urządzeń peryferyjnych.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">⌕</div>
+                    <h3>Diagnostyka komputerów</h3>
+                    <p>Pomoc w rozwiązywaniu problemów ze sprzętem i systemem.</p>
+                </article>
+
+            </div>
+
+            <div class="local-location">
+                <span class="eyebrow">OBSZAR DZIAŁANIA</span>
+                <h3>📍 Lublin i okolice</h3>
+                <p>
+                    Dojazd do klienta w promieniu 10 km od Lublina.
+                    Termin wizyty ustalamy indywidualnie.
+                </p>
+                <a href="#kontakt" class="primary-button">
+                    Umów pomoc komputerową
+                </a>
             </div>
         </section>
 
-        <!-- KONTAKT -->
-        <section class="contact" id="kontakt">
-            <span class="eyebrow">MASZ PYTANIA?</span>
-            <h2>Porozmawiajmy o Twojej stronie.</h2>
-            <p>Opowiedz nam o swoim pomyśle. Wspólnie znajdziemy
-               najlepsze rozwiązanie.</p>
+        <!-- O NAS -->
 
-            <a href="mailto:kontakt@prosto-online.pl" class="primary-button">
-                Napisz do nas
-            </a>
-        </section>
+
+        <!-- KONTAKT -->
+       <section class="contact" id="kontakt">
+    <span class="eyebrow">MASZ PYTANIA?</span>
+    <h2>Porozmawiajmy o Twojej stronie.</h2>
+    <p>Opowiedz nam o swoim pomyśle. Wspólnie znajdziemy
+       najlepsze rozwiązanie.</p>
+
+    <form action="https://formsubmit.co/kontakt@prosto-online.pl" method="POST">
+        <input type="text" name="name" placeholder="Twoje imię" required>
+
+        <input type="email" name="email" placeholder="Twój adres e-mail" required>
+
+        <input type="text" name="subject" placeholder="Temat wiadomości" required>
+
+        <textarea name="message" placeholder="Napisz, w czym możemy Ci pomóc..." required></textarea>
+
+        <input type="hidden" name="_subject" value="Nowa wiadomość ze strony Prosto Online">
+        <input type="hidden" name="_captcha" value="true">
+
+        <button type="submit" class="primary-button">Wyślij wiadomość</button>
+    </form>
+</section>
 
     </main>
 
