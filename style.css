@@ -591,3 +591,58 @@ a {
     font-size: 18px;
     font-weight: 500;
 }
+/* CENNIK */
+
+.pricing {
+    padding: 100px 8%;
+    background-color: #0b1220;
+}
+
+.pricing .service-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing .service-card strong {
+    display: block;
+    margin-top: 20px;
+    color: #299cf5;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* INFORMACJA O DOJAZDZIE W CENNIKU */
+
+.pricing-info {
+    max-width: 850px;
+    margin: 50px auto 0;
+    padding: 30px;
+    background: #15243a;
+    border: 1px solid #263e5d;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.pricing-info {
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
+    margin: 50px auto 0;
+    padding: 30px;
+    background: #15243a;
+    border: 1px solid #263e5d;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.pricing-info h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.pricing-info p {
+    color: #a9b7ca;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
