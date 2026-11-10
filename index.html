@@ -210,9 +210,11 @@
                     Dojazd do klienta w promieniu 10 km od Lublina.
                     Termin wizyty ustalamy indywidualnie.
                 </p>
-                <a href="#kontakt" class="primary-button">
-                    Umów pomoc komputerową
-                </a>
+                <a href="#kontakt"
+   class="primary-button"
+   data-usluga="pomoc-komputerowa">
+    Umów pomoc komputerową
+</a>
             </div>
         </section>
 
@@ -231,7 +233,20 @@
 
         <input type="email" name="email" placeholder="Twój adres e-mail" required>
 
-        <input type="text" name="subject" placeholder="Temat wiadomości" required>
+       <label for="service">Czego dotyczy zapytanie?</label>
+
+<select name="subject" id="service" required>
+    <option value="" disabled selected>Wybierz usługę</option>
+    <option value="Tworzenie stron internetowych">
+        Tworzenie stron internetowych
+    </option>
+    <option value="Pomoc komputerowa z dojazdem">
+        Pomoc komputerowa z dojazdem
+    </option>
+    <option value="Inna sprawa">
+        Inna sprawa
+    </option>
+</select>
 
         <textarea name="message" placeholder="Napisz, w czym możemy Ci pomóc..." required></textarea>
 

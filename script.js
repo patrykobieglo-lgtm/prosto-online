@@ -54,3 +54,14 @@ if (!prefersReducedMotion) {
     });
 
 }
+
+/// Automatyczny wybór usługi w formularzu
+document.querySelectorAll('[data-usluga]').forEach((przycisk) => {
+    przycisk.addEventListener('click', () => {
+        const poleUslugi = document.querySelector('#service');
+
+        if (przycisk.dataset.usluga === 'pomoc-komputerowa' && poleUslugi) {
+            poleUslugi.value = 'Pomoc komputerowa z dojazdem';
+        }
+    });
+});

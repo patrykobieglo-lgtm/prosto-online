@@ -559,3 +559,35 @@ a {
         padding: 25px 18px;
     }
 }
+/* Lista wyboru usługi w formularzu */
+
+#kontakt select {
+    width: 100%;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    background-color: #111d30;
+    color: #ffffff;
+    border: 1px solid #35445a;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+#kontakt select:focus {
+    border-color: #299cf5;
+}
+
+#kontakt select option {
+    background-color: #111d30;
+    color: #ffffff;
+}
+
+#kontakt label {
+    display: block;
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
