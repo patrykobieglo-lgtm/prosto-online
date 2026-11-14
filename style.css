@@ -646,3 +646,25 @@ a {
     line-height: 1.7;
     margin-bottom: 10px;
 }
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    margin: 15px auto 25px;
+    padding: 16px 28px;
+    background: #25D366;
+    color: white;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    transition: 0.2s;
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+    transform: scale(1.04);
+}
