@@ -184,7 +184,6 @@ a {
 .visual-card {
     width: 100%;
     max-width: 430px;
-    min-height: 320px;
     padding: 40px;
     border: 1px solid #294568;
     border-radius: 18px;
@@ -193,8 +192,15 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+        padding: 0;
+    overflow: hidden;
 }
-
+.visual-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 .visual-icon {
     color: var(--blue);
     font-size: 45px;
