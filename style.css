@@ -201,16 +201,20 @@ a {
     height: auto;
     object-fit: contain;
 }
-/* LOGO PO NAJECHANIU NA WIZYTÓWKĘ */
+/* AUTOMATYCZNA ZMIANA WIZYTÓWKI I LOGO */
 
 .visual-card {
     position: relative;
-    cursor: pointer;
+    overflow: hidden;
 }
 
 .visual-image,
 .visual-logo {
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visual-image {
+    animation: pokazWizytowke 6s infinite;
 }
 
 .visual-logo {
@@ -220,30 +224,40 @@ a {
     height: 100%;
     object-fit: contain;
     opacity: 0;
-    transform: scale(0.92);
-    pointer-events: none;
+    transform: scale(0.94);
+    animation: pokazLogo 6s infinite;
 }
 
-.visual-card:hover .visual-image {
-    opacity: 0;
-    transform: scale(1.04);
-}
-
-.visual-card:hover .visual-logo {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Telefony i urządzenia dotykowe */
-@media (hover: none) {
-    .visual-logo {
-        display: none;
-    }
-
-    .visual-image {
+@keyframes pokazWizytowke {
+    0%, 45% {
         opacity: 1;
+        transform: scale(1);
+    }
+    50%, 95% {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
+
+@keyframes pokazLogo {
+    0%, 45% {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+    50%, 95% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+}
+
 .visual-icon {
     color: var(--blue);
     font-size: 45px;
@@ -764,4 +778,14 @@ a {
 
 html {
     scroll-behavior: smooth;
+}
+.visual-card-link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.visual-card-link:focus-visible {
+    outline: 3px solid #2196f3;
+    outline-offset: 5px;
 }
